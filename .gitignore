@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local secrets
+.env
+
+# Generated AST visualizations
+ast_output
+ast_output.*
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

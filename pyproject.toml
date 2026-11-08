@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlfluff-plugin-semantic"
+version = "0.1.0"
+description = "SQL semantic analysis plugin for detecting logical errors and cross-dependencies"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "sqlfluff>=3.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.entry-points.sqlfluff]
+sqlfluff_plugin_semantic = "sqlfluff_plugin_semantic"
