@@ -1,0 +1,19 @@
+# Exact versions used during development, shared by the MySQL and PostgreSQL branches.
+# pyproject.toml declares the minimum versions; this file pins the ones we test with,
+# so that both engines parse SQL with the same SQLFluff release.
+#
+#   python -m venv .venv && source .venv/bin/activate
+#   pip install -r requirements.txt
+
+# Runtime
+sqlfluff==4.3.0
+mysql-connector-python==26.7.0
+psycopg2-binary==2.9.12
+python-dotenv==1.2.4
+
+# Development
+pytest==9.1.1
+graphviz==0.21  # generate_tree.py (also needs the Graphviz system binaries)
+
+# The plugin itself, in editable mode (registers the SQLFluff entry point)
+-e .
